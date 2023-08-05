@@ -24,7 +24,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-2">
             <div className="card-image">
-              <img src="{% static 'images/placeholder1.jpg' %}" alt="card1" />
+              <img src="#" alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -35,7 +35,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-3">
             <div className="card-image">
-              <img src="{% static 'images/placeholder2.jpg' %}" alt="card1" />
+              <img src="#" alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -46,7 +46,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-4">
             <div className="card-image">
-              <img src="{% static 'images/placeholder3.jpg' %}" alt="card1" />
+              <img src="#" alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -57,7 +57,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-5">
             <div className="card-image">
-              <img src="{% static 'images/placeholder4.jpg' %}" alt="card1" />
+              <img src="#" alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -67,10 +67,7 @@ export default function PortfolioSection() {
           </a>
 
           <div className="portfolio-card portfolio-card-6 large-button-container">
-            <a
-              href="{% url 'website:projects' %}"
-              className="large-button button-fill"
-            >
+            <a href="#" className="large-button button-fill">
               See
               <br />
               All
