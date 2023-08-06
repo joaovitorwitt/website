@@ -1,32 +1,36 @@
 export default function ContactForm() {
   return (
-    <form action="{% url 'website:home' %}" class="contact-form" method="post">
-      <div class="input-group">
-        <div class="input">
-          <input type="text" id="name" autocomplete="off" required />
+    <form
+      action="{% url 'website:home' %}"
+      className="contact-form"
+      method="post"
+    >
+      <div className="input-group">
+        <div className="input">
+          <input type="text" id="name" autoComplete="off" required />
 
-          <label for="name" class="input-label">
-            Name <span class="required-field">*</span>
+          <label htmlFor="name" className="input-label">
+            Name <span className="required-field">*</span>
           </label>
         </div>
 
-        <div class="input">
-          <input type="text" id="email" autocomplete="off" required />
-          <label for="email" class="input-label">
-            Email <span class="required-field">*</span>
+        <div className="input">
+          <input type="text" id="email" autoComplete="off" required />
+          <label htmlFor="email" className="input-label">
+            Email <span className="required-field">*</span>
           </label>
         </div>
       </div>
 
-      <div class="input">
-        <input type="text" id="message" autocomplete="off" required />
+      <div className="input">
+        <input type="text" id="message" autoComplete="off" required />
 
-        <label for="message" class="input-label">
-          Message<span class="required-field">*</span>
+        <label htmlFor="message" className="input-label">
+          Message<span className="required-field">*</span>
         </label>
       </div>
 
-      <button type="submit" class="button form-button button-fill">
+      <button type="submit" className="button form-button button-fill">
         Send Message
       </button>
     </form>

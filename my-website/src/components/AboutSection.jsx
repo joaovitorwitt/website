@@ -1,4 +1,24 @@
+import Typed from "typed.js";
+import { useEffect } from "react";
+
 export default function AboutSection() {
+  useEffect(() => {
+    let typed = new Typed("#changing", {
+      strings: [
+        "Full Stack Developer",
+        "Blockchain Developer",
+        "Machine Learning Developer",
+        "Web Developer",
+      ],
+      typeSpeed: 100,
+      loop: true,
+      backDelay: 2000,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <section className="about-me section" id="about-me">
       <div className="container">
@@ -11,7 +31,7 @@ export default function AboutSection() {
         </div>
 
         <div className="tech-stack d-grid">
-          <div className="tech-stack-item" data-tooltip="HTML5">
+          <div className="tech-stack-item" data-tooltip="HTML">
             <i className="fa-brands fa-html5"></i>
           </div>
 
@@ -23,8 +43,8 @@ export default function AboutSection() {
             <i className="fa-brands fa-js"></i>
           </div>
 
-          <div className="tech-stack-item" data-tooltip="Angular">
-            <i className="fa-brands fa-angular"></i>
+          <div className="tech-stack-item" data-tooltip="React">
+            <i className="fa-brands fa-react"></i>
           </div>
 
           <div className="tech-stack-item" data-tooltip="Python">

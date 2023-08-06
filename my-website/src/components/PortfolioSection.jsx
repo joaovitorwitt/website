@@ -1,3 +1,7 @@
+import Placeholder from "../assets/images/placeholder.png";
+import Placeholder2 from "../assets/images/placeholder2.png";
+import { Link } from "react-router-dom";
+
 export default function PortfolioSection() {
   return (
     <section className="portfolio section" id="portfolio">
@@ -13,7 +17,7 @@ export default function PortfolioSection() {
         <div className="portfolio-cards d-grid">
           <a href="#" className="portfolio-card portfolio-card-1">
             <div className="card-image">
-              <img src="static/images/finance.png" alt="card1" />
+              <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -24,7 +28,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-2">
             <div className="card-image">
-              <img src="#" alt="card1" />
+              <img src={Placeholder2} alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -35,7 +39,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-3">
             <div className="card-image">
-              <img src="#" alt="card1" />
+              <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -46,7 +50,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-4">
             <div className="card-image">
-              <img src="#" alt="card1" />
+              <img src={Placeholder2} alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -57,7 +61,7 @@ export default function PortfolioSection() {
 
           <a href="#" className="portfolio-card portfolio-card-5">
             <div className="card-image">
-              <img src="#" alt="card1" />
+              <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
@@ -67,11 +71,11 @@ export default function PortfolioSection() {
           </a>
 
           <div className="portfolio-card portfolio-card-6 large-button-container">
-            <a href="#" className="large-button button-fill">
+            <Link to={"/projects"} className="large-button button-fill">
               See
               <br />
               All
-            </a>
+            </Link>
           </div>
         </div>
       </div>

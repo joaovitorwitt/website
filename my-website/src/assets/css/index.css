@@ -791,6 +791,19 @@ button {
   border-radius: 0.4rem;
 }
 
+/* NOT FOUND PAGE */
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.error-page-wrapper {
+  text-align: center;
+}
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
