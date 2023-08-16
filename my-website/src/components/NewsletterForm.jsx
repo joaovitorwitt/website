@@ -1,3 +1,5 @@
+import FormInput from "./FormInput";
+
 export default function NewsletterForm() {
   return (
     <form
@@ -5,12 +7,11 @@ export default function NewsletterForm() {
       method="post"
       className="newsletter-form"
     >
-      <input
-        type="text"
-        className="email"
-        autoComplete="off"
-        required
-        placeholder="Email Address"
+      <FormInput
+        classname={"email"}
+        type={"text"}
+        autocomplete={"off"}
+        placeholder={"Email Address"}
       />
 
       <input type="submit" value="Subscribe" className="newsletter-btn" />
