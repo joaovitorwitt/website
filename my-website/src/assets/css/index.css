@@ -650,6 +650,7 @@ button {
 /* ARTICLES PAGE */
 .posts-wrapper {
   display: grid;
+  margin-top: 3rem;
   gap: 2rem;
 }
 
