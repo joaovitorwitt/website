@@ -1,8 +1,21 @@
+import { useEffect } from "react";
 import Profile from "../assets/images/profile-picture.jpg";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
 
 export default function About() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "50px",
+      duration: 1500,
+      easing: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+    });
+
+    sr.reveal(".about-me-picture", { origin: "top" });
+    sr.reveal(".about-me-data-container", { origin: "right" });
+  });
+
   return (
     <>
       <Header />

@@ -5,6 +5,8 @@ export default function FormInput({
   placeholder,
   required,
   id,
+  action,
+  value,
 }) {
   return (
     <input
@@ -14,6 +16,8 @@ export default function FormInput({
       placeholder={placeholder}
       required={required}
       id={id}
+      onChange={action}
+      value={value}
     />
   );
 }

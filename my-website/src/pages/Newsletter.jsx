@@ -1,7 +1,19 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import NewsletterForm from "../components/NewsletterForm";
+import ScrollReveal from "scrollreveal";
 
 export default function Newsletter() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "50px",
+      duration: 1500,
+      easing: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+    });
+
+    sr.reveal(".newsletter-title", { origin: "top" });
+    sr.reveal(".newsletter-description", { origin: "bottom" });
+  });
   return (
     <>
       <Header />

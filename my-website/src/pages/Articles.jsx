@@ -1,10 +1,23 @@
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
+
 // Importing article images
 import commitMessagesArticle from "../assets/images/write-commit-messages-right.jpg";
 import aiWillTransformEd from "../assets/images/how-ai-will-transform-education.png";
 import thinIceAi from "../assets/images/walking-on-thin-ice-ai.png";
+import Header from "../components/Header";
+import { useEffect } from "react";
 
 export default function Articles() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: "50px",
+      duration: 1500,
+      easing: "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+    });
+    sr.reveal(".article", { interval: 200 });
+  });
+
   const articles = [
     {
       id: 1,
@@ -32,34 +45,37 @@ export default function Articles() {
     },
   ];
   return (
-    <div className="container">
-      <div className="posts-wrapper">
-        {articles.map((article, index) => (
-          <Link key={article.id} className="article" to={""}>
-            <div className="article-wrapper">
-              <div className="posts-article-image-wrapper">
-                <img
-                  src={article.image}
-                  key={article.id}
-                  alt=""
-                  className="article-image"
-                />
-              </div>
-
-              <div className="article-data-container">
-                <div className="article-data">
-                  <span>{article.date}</span>
-                  <span className="article-data-spacer"></span>
-                  {/* <span>{index}</span> */}
+    <>
+      <Header />
+      <div className="container">
+        <div className="posts-wrapper">
+          {articles.map((article, index) => (
+            <Link key={article.id} className="article" to={""}>
+              <div className="article-wrapper">
+                <div className="posts-article-image-wrapper">
+                  <img
+                    src={article.image}
+                    key={article.id}
+                    alt=""
+                    className="article-image"
+                  />
                 </div>
 
-                <h3 className="article-title">{article.title}</h3>
-                <p className="article-description">{article.description}</p>
+                <div className="article-data-container">
+                  <div className="article-data">
+                    <span>{article.date}</span>
+                    <span className="article-data-spacer"></span>
+                    {/* <span>{index}</span> */}
+                  </div>
+
+                  <h3 className="article-title">{article.title}</h3>
+                  <p className="article-description">{article.description}</p>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

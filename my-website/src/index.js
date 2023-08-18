@@ -10,6 +10,7 @@ import Articles from "./pages/Articles";
 import Article from "./pages/Article";
 import Newsletter from "./pages/Newsletter";
 import ThankYou from "./pages/ThankYou";
+import Projects from "./pages/Projects";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
   {
     path: "/thankyou",
     element: <ThankYou />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
     errorElement: <ErrorPage />,
   },
 ]);
