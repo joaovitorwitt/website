@@ -776,7 +776,8 @@ button {
 }
 
 /* THANK YOU PAGE */
-.thankyou-description {
+.thankyou-description,
+.thankyou-description-two {
   margin-bottom: 4rem;
 }
 
@@ -802,6 +803,12 @@ button {
 
 .error-page-wrapper {
   text-align: center;
+}
+
+/* ERROR MESSAGE */
+.error-message {
+  color: #ff7575;
+  font-size: 1.5rem;
 }
 
 /* SCROLLBAR */
