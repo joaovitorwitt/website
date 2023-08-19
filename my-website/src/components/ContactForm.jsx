@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import FormInput from "./FormInput";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ export default function ContactForm() {
     setFormData((prevData) => ({ ...prevData, [id]: value }));
   }
 
-  function handleContactForm(e) {
+  async function handleContactForm(e) {
     e.preventDefault();
 
     const newErrors = {
@@ -41,13 +42,28 @@ export default function ContactForm() {
 
     // if there is no errors, submit the form
     if (Object.values(newErrors).every((error) => error === "")) {
-      console.log(`Form submitted: ${formData}`);
-
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
+      // send email using Emailjs
+      try {
+        await emailjs.send(
+          "service_xn1h6gg",
+          "template_id",
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+          },
+          "TmEXwwcTa2EpTjKpw"
+        );
+        // clear form data after sending the email
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          // TODO -- redirect the user to another page
+        });
+      } catch (error) {
+        console.log(`Error sending email: ${error}`);
+      }
     }
   }
 
