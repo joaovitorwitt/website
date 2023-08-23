@@ -1,30 +1,33 @@
 import { Link } from "react-router-dom";
+// import ReactMarkdown from "react-markdown";
+
+// Importing article images
+import Header from "../components/Header";
 
 export default function Article() {
   return (
     <>
-      <section class="blog-post section-header-offset">
-        <div class="blog-post-container container">
-          <div class="blog-post-data">
-            <h3 class="blog-post-title title">article_record.article_title</h3>
-            <div class="article-data">
-              <span>article_record.created_at|date:F j, Y</span>
-              {/* <!-- <span class="article-data-spacer"></span> --> */}
-              {/* <!-- <span>4 Min read</span> --> */}
+      <Header />
+      <section className="blog-post section-header-offset">
+        <div className="blog-post-container container">
+          <div className="blog-post-data">
+            <h3 className="blog-post-title title">article.title</h3>
+            <div className="article-data">
+              <span>article.date</span>
             </div>
 
-            <img src="{{ article_record.article_image.url }}" alt="" />
+            <img src={"dsadas"} alt="article" />
           </div>
 
-          <div class="container">
-            <p>rticle_record.article_content | safe</p>
+          <div className="container">
+            {/* <ReactMarkdown>{markdownContent}</ReactMarkdown> */}
           </div>
         </div>
       </section>
 
-      <div class="large-button-container" style={{ margin: "3rem 0" }}>
-        <Link to={"/articles"} class="large-button button-fill">
-          Voltar
+      <div className="large-button-container" style={{ margin: "3rem 0" }}>
+        <Link to={"/articles"} className="large-button button-fill">
+          Return
         </Link>
       </div>
     </>

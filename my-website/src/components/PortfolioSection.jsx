@@ -15,7 +15,7 @@ export default function PortfolioSection() {
         </div>
 
         <div className="portfolio-cards d-grid">
-          <a href="#" className="portfolio-card portfolio-card-1">
+          <Link href="#" className="portfolio-card portfolio-card-1">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
@@ -24,9 +24,9 @@ export default function PortfolioSection() {
               <h5 className="card-title">Untitled Project 01</h5>
               <span className="card-subtitle">Untitled description 01</span>
             </div>
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio-card portfolio-card-2">
+          <Link href="#" className="portfolio-card portfolio-card-2">
             <div className="card-image">
               <img src={Placeholder2} alt="card1" />
             </div>
@@ -35,9 +35,9 @@ export default function PortfolioSection() {
               <h5 className="card-title">Untitled Project 02</h5>
               <span className="card-subtitle">Untitled description 02</span>
             </div>
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio-card portfolio-card-3">
+          <Link href="#" className="portfolio-card portfolio-card-3">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
@@ -46,9 +46,9 @@ export default function PortfolioSection() {
               <h5 className="card-title">Untitled Project 03</h5>
               <span className="card-subtitle">Untitled description 03</span>
             </div>
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio-card portfolio-card-4">
+          <Link href="#" className="portfolio-card portfolio-card-4">
             <div className="card-image">
               <img src={Placeholder2} alt="card1" />
             </div>
@@ -57,9 +57,9 @@ export default function PortfolioSection() {
               <h5 className="card-title">Untitled Project 04</h5>
               <span className="card-subtitle">Untitled description 04</span>
             </div>
-          </a>
+          </Link>
 
-          <a href="#" className="portfolio-card portfolio-card-5">
+          <Link href="#" className="portfolio-card portfolio-card-5">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
@@ -68,7 +68,7 @@ export default function PortfolioSection() {
               <h5 className="card-title">Untitled Project 05</h5>
               <span className="card-subtitle">Untitled description 05</span>
             </div>
-          </a>
+          </Link>
 
           <div className="portfolio-card portfolio-card-6 large-button-container">
             <Link to={"/projects"} className="large-button button-fill">
