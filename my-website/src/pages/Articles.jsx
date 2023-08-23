@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Header from "../components/Header";
+// importing articles file
+import ArticleList from "../articles.js";
 
 export default function Articles() {
+  console.log(ArticleList);
   useEffect(() => {
     const sr = ScrollReveal({
       distance: "50px",
@@ -13,51 +16,35 @@ export default function Articles() {
     sr.reveal(".article", { interval: 200 });
   });
 
-  const [titles, setTitle] = useState([]);
-
-  useEffect(() => {
-    async function fetchMarkdownTitles() {
-      try {
-        const response = await fetch("public/posts");
-        const fileNames = await response.text();
-        console.log(fileNames);
-        const titles = fileNames
-          .split("\n")
-          .filter((fileName) => fileName.endsWith(".md"))
-          .map((fileName) => fileName.replace(".md", ""));
-        setTitle(titles);
-      } catch (error) {
-        console.log(`Error fetching Mardown files: ${error}`);
-      }
-    }
-    fetchMarkdownTitles();
-  }, []);
-
   return (
     <>
       <Header />
       <div className="container">
         <div className="posts-wrapper">
-          {titles.map((title, index) => (
-            <Link key={index} className="article" to={`/articles/${title}`}>
+          {ArticleList.map((article, index) => (
+            <Link
+              key={index}
+              className="article"
+              to={`/articles/${article.id}`}
+            >
               <div className="article-wrapper">
                 <div className="posts-article-image-wrapper">
-                  {/* <img
+                  <img
                     src={article.image}
                     key={article.id}
                     alt=""
                     className="article-image"
-                  /> */}
+                  />
                 </div>
 
                 <div className="article-data-container">
                   <div className="article-data">
-                    {/* <span>{article.date}</span> */}
+                    <span>{article.date}</span>
                     <span className="article-data-spacer"></span>
                   </div>
 
-                  <h3 className="article-title">{title}</h3>
-                  {/* <p className="article-description">{article.description}</p> */}
+                  <h3 className="article-title">{article.title}</h3>
+                  <p className="article-description">{article.description}</p>
                 </div>
               </div>
             </Link>

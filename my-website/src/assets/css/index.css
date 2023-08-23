@@ -710,6 +710,7 @@ button {
   height: var(--item-min-height-sm);
   object-fit: cover;
   object-position: center 10%;
+  border-radius: 10px;
 }
 
 .blog-post-container.container {

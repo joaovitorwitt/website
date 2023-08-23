@@ -1,26 +1,30 @@
 import { Link } from "react-router-dom";
-// import ReactMarkdown from "react-markdown";
-
-// Importing article images
 import Header from "../components/Header";
+import { useParams } from "react-router-dom";
+import ArticleList from "../articles";
 
 export default function Article() {
+  const { id } = useParams();
+
+  const article = ArticleList.find(
+    (article) => article.id === parseInt(id, 10)
+  );
   return (
     <>
       <Header />
       <section className="blog-post section-header-offset">
         <div className="blog-post-container container">
           <div className="blog-post-data">
-            <h3 className="blog-post-title title">article.title</h3>
+            <h3 className="blog-post-title title">{article.title}</h3>
             <div className="article-data">
-              <span>article.date</span>
+              <span>{article.date}</span>
             </div>
 
-            <img src={"dsadas"} alt="article" />
+            <img src={article.image} alt="article" />
           </div>
 
           <div className="container">
-            {/* <ReactMarkdown>{markdownContent}</ReactMarkdown> */}
+            <p dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
         </div>
       </section>
