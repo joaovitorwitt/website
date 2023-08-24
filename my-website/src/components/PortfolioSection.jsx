@@ -15,58 +15,69 @@ export default function PortfolioSection() {
         </div>
 
         <div className="portfolio-cards d-grid">
-          <Link href="#" className="portfolio-card portfolio-card-1">
+          <Link to={"/projects/1"} className="portfolio-card portfolio-card-1">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Untitled Project 01</h5>
-              <span className="card-subtitle">Untitled description 01</span>
+              <h5 className="card-title">Physics Engine</h5>
+              <span className="card-subtitle">
+                A place where you can take your physics knowledge to the next
+                level.
+              </span>
             </div>
           </Link>
 
-          <Link href="#" className="portfolio-card portfolio-card-2">
+          <Link to={"/projects/2"} className="portfolio-card portfolio-card-2">
             <div className="card-image">
               <img src={Placeholder2} alt="card1" />
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Untitled Project 02</h5>
-              <span className="card-subtitle">Untitled description 02</span>
+              <h5 className="card-title">Productivity App</h5>
+              <span className="card-subtitle">
+                Most people say that you cannot buy time. Let me show you
+                something..
+              </span>
             </div>
           </Link>
 
-          <Link href="#" className="portfolio-card portfolio-card-3">
+          <Link to={"/projects/3"} className="portfolio-card portfolio-card-3">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Untitled Project 03</h5>
-              <span className="card-subtitle">Untitled description 03</span>
+              <h5 className="card-title">Academic Paper Scraper</h5>
+              <span className="card-subtitle">
+                Gather all scientific information from the community all in one
+                place.
+              </span>
             </div>
           </Link>
 
-          <Link href="#" className="portfolio-card portfolio-card-4">
+          <Link to={"/projects/4"} className="portfolio-card portfolio-card-4">
             <div className="card-image">
               <img src={Placeholder2} alt="card1" />
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Untitled Project 04</h5>
-              <span className="card-subtitle">Untitled description 04</span>
+              <h5 className="card-title">Vertical AI Project</h5>
+              <span className="card-subtitle">You saw that coming.</span>
             </div>
           </Link>
 
-          <Link href="#" className="portfolio-card portfolio-card-5">
+          <Link to={"/projects/5"} className="portfolio-card portfolio-card-5">
             <div className="card-image">
               <img src={Placeholder} alt="card1" />
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Untitled Project 05</h5>
-              <span className="card-subtitle">Untitled description 05</span>
+              <h5 className="card-title">Blockchain Ecosystem</h5>
+              <span className="card-subtitle">
+                Run, deploy, and test all your blockchain operations.
+              </span>
             </div>
           </Link>
 

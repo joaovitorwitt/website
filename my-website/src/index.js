@@ -11,6 +11,7 @@ import Article from "./pages/Article";
 import Newsletter from "./pages/Newsletter";
 import ThankYou from "./pages/ThankYou";
 import Projects from "./pages/Projects";
+import Project from "./pages/Project";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     path: "/projects",
     element: <Projects />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/projects/:id",
+    element: <Project />,
   },
 ]);
 

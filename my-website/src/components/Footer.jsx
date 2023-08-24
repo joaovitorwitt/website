@@ -1,4 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 export default function Footer() {
+  const date = new Date();
+  let year = date.getFullYear();
   return (
     <footer className="footer">
       <div className="footer-container container">
@@ -25,10 +30,17 @@ export default function Footer() {
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </li>
+
+            <li className="list-item">
+              <a href="">
+                <FontAwesomeIcon icon={faPhone} />
+                <p>+55 54 991109265</p>
+              </a>
+            </li>
           </ul>
         </div>
 
-        <span>&copy; 2023 João. All rights reserved.</span>
+        <span>&copy; {year} João. All rights reserved.</span>
 
         <a href="#home" className="scroll-top">
           <i className="fa-solid fa-chevron-up"></i>

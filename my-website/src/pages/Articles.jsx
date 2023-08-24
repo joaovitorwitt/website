@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import ArticleList from "../articles.js";
 
 export default function Articles() {
-  console.log(ArticleList);
   useEffect(() => {
     const sr = ScrollReveal({
       distance: "50px",

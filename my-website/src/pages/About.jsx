@@ -3,6 +3,8 @@ import Profile from "../assets/images/profile-picture.jpg";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   useEffect(() => {

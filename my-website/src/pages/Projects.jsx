@@ -2,13 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-// project images
-import physicsEngine from "../assets/images/project-images/physics-project.png";
-import blockchainProject from "../assets/images/project-images/blockchain-project.png";
-import productivityApp from "../assets/images/project-images/productivity-app.png";
-import verticalAI from "../assets/images/project-images/vertical-ai.png";
-import academicScraper from "../assets/images/project-images/academic-scraper.png";
-import highLevel from "../assets/images/project-images/high-level-project.png";
+import projectsList from "../projects.js";
 
 export default function Projects() {
   useEffect(() => {
@@ -23,46 +17,7 @@ export default function Projects() {
   });
 
   // TODO - add field for a more detailed description for the individual page
-  // TODO - come up with mathematical formula to always get results in the range of 6
-  const projects = [
-    {
-      id: 1,
-      title: "Physics Engine",
-      description: "Description",
-      image: physicsEngine,
-    },
-    {
-      id: 2,
-      title: "Productivity App",
-      description: "Productivity app. Powered by Django and React",
-      image: productivityApp,
-    },
-    {
-      id: 3,
-      title: "Academic Paper Scraper",
-      description:
-        "Gather all scientific information from the community all in one place.",
-      image: academicScraper,
-    },
-    {
-      id: 4,
-      title: "Some vertical AI project",
-      description: "description for my vertical ai project",
-      image: verticalAI,
-    },
-    {
-      id: 5,
-      title: "Some Blockchain project",
-      description: "description for my Blockchain project",
-      image: blockchainProject,
-    },
-    {
-      id: 6,
-      title: "another high level project",
-      description: "description for my high level project",
-      image: highLevel,
-    },
-  ];
+  // TODO - come up with mathematical formula to always get results in the range of 6 (perhaps the remaining operator)
 
   return (
     <>
@@ -74,9 +29,9 @@ export default function Projects() {
 
         <div className="portfolio-cards d-grid">
           {/* <!-- BE CAREFUL WHEN LOOP COUNTER GOES BEYOND 6 --> */}
-          {projects.map((project, index) => (
+          {projectsList.map((project, index) => (
             <Link
-              href="{% url 'website:project' project.id %}"
+              to={`/projects/${project.id}`}
               className={"portfolio-card portfolio-card-" + project.id}
               key={project.id}
             >
