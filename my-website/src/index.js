@@ -12,6 +12,7 @@ import Newsletter from "./pages/Newsletter";
 import ThankYou from "./pages/ThankYou";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
+import ThankYouContact from "./pages/ThankYouContact";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/thanks",
+    element: <ThankYouContact />,
     errorElement: <ErrorPage />,
   },
   {

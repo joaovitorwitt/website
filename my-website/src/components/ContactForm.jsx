@@ -1,9 +1,13 @@
 import { useState } from "react";
-// import { useRef } from "react";
+import { useRef } from "react";
 import FormInput from "./FormInput";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactForm() {
+  const form = useRef();
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -47,7 +51,7 @@ export default function ContactForm() {
       try {
         await emailjs.send(
           "service_xn1h6gg",
-          "template_id",
+          "template_vyuqux5",
           {
             from_name: formData.name,
             from_email: formData.email,
@@ -62,6 +66,7 @@ export default function ContactForm() {
           message: "",
           // TODO -- redirect the user to another page
         });
+        navigate("/thanks");
       } catch (error) {
         console.log(`Error sending email: ${error}`);
       }
@@ -70,6 +75,7 @@ export default function ContactForm() {
 
   return (
     <form
+      ref={form}
       onSubmit={handleContactForm}
       action=""
       className="contact-form"

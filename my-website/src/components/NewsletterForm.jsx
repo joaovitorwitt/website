@@ -7,7 +7,7 @@ export default function NewsletterForm(email) {
   const navigate = useNavigate();
 
   const [newsletterData, setNewsletterData] = useState({
-    email: "",
+    email: "Email Address",
   });
 
   const [newsletterError, setNewsletterError] = useState({
@@ -20,8 +20,8 @@ export default function NewsletterForm(email) {
   }
 
   function handleNewsletterInputChange(e) {
-    const { id, value } = e.target;
-    setNewsletterData((prevData) => ({ ...prevData, [id]: value }));
+    const { name, value } = e.target;
+    setNewsletterData((prevData) => ({ ...prevData, [name]: value }));
   }
 
   function removeErrorFromScreen() {
@@ -68,24 +68,68 @@ export default function NewsletterForm(email) {
 
   return (
     <form
-      action="{% url 'website:newsletter' %}"
       method="post"
       className="newsletter-form"
+      acceptCharset="UTF-8"
+      action="https://www.aweber.com/scripts/addlead.pl"
       onSubmit={handleNewsletterForm}
     >
-      <FormInput
-        classname={"email"}
-        id={"email"}
-        type={"text"}
-        autocomplete={"off"}
-        placeholder={"Email Address"}
-        value={newsletterData.email}
-        action={handleNewsletterInputChange}
-      />
+      <div style={{ display: "none" }}>
+        <input type="hidden" name="meta_web_form_id" value="772737528" />
+        <input type="hidden" name="meta_split_id" value="" />
+        <input type="hidden" name="listname" value="awlist6609873" />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://joaovitorwitt.com/thanks"
+          id="redirect_10f1d8217bdab3c638a73541f0499adf"
+        />
+        <input
+          type="hidden"
+          name="meta_redirect_onlist"
+          value="https://joaovitorwitt.com/newsletter"
+        />
+        <input type="hidden" name="meta_adtracking" value="My_Web_Form" />
+        <input type="hidden" name="meta_message" value="1" />
+        <input type="hidden" name="meta_required" value="email" />
 
-      <div className="error-message">{newsletterError.email}</div>
-
-      <input type="submit" value="Subscribe" className="newsletter-btn" />
+        <input type="hidden" name="meta_tooltip" value="email||Email Address" />
+      </div>
+      <div id="af-form-772737528" className="af-form">
+        <div id="af-body-772737528" className="af-body af-standards">
+          <div className="af-element">
+            <div className="af-textWrap">
+              <input
+                className="email"
+                id="awf_field-116178738"
+                type="text"
+                name="email"
+                value={newsletterData.email}
+                onChange={handleNewsletterInputChange}
+                tabIndex="500"
+                autoComplete="off"
+              />
+            </div>
+            <div className="af-clear"></div>
+          </div>
+          <div className="af-element buttonContainer">
+            <input
+              name="submit"
+              className="newsletter-btn"
+              type="submit"
+              value="Subscribe"
+              tabIndex="501"
+            />
+            <div className="af-clear"></div>
+          </div>
+        </div>
+      </div>
+      <div style={{ display: "none" }}>
+        <img
+          src="https://forms.aweber.com/form/displays.htm?id=7OxM7MzsrEwc"
+          alt=""
+        />
+      </div>
     </form>
   );
 }
