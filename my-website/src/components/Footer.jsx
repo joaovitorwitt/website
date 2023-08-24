@@ -32,10 +32,8 @@ export default function Footer() {
             </li>
 
             <li className="list-item">
-              <a href="">
-                <FontAwesomeIcon icon={faPhone} />
-                <p>+55 54 991109265</p>
-              </a>
+              <FontAwesomeIcon icon={faPhone} />
+              <p>+55 54 991109265</p>
             </li>
           </ul>
         </div>
