@@ -3,8 +3,8 @@ import Profile from "../assets/images/profile-picture.jpg";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   useEffect(() => {
@@ -38,42 +38,53 @@ export default function About() {
               </Link>
             </p>
 
-            <h4 className="about-me-footer">Connect with me</h4>
-            <div className="social-media">
-              <ul className="list">
-                <li className="list-item">
-                  <a
-                    href="https://github.com/joaovitorwitt"
-                    target="_blank"
-                    className="list-link"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                </li>
+            <div className="lower-section-data-container">
+              <div className="social-media">
+                <h4 className="about-me-footer">Connect with me</h4>
+                <ul className="list">
+                  <li className="list-item">
+                    <a
+                      href="https://github.com/joaovitorwitt"
+                      target="_blank"
+                      className="list-link"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-github"></i>
+                    </a>
+                  </li>
 
-                <li className="list-item">
-                  <a
-                    href="https://www.youtube.com/channel/UCPeHjk3fEPzK0RKHpQG7gJw"
-                    target="_blank"
-                    className="list-link"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
+                  <li className="list-item">
+                    <a
+                      href="https://www.youtube.com/channel/UCPeHjk3fEPzK0RKHpQG7gJw"
+                      target="_blank"
+                      className="list-link"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-youtube"></i>
+                    </a>
+                  </li>
 
-                <li className="list-item">
-                  <a
-                    href="https://www.linkedin.com/in/joaovitorwitt/"
-                    target="_blank"
-                    className="list-link"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+                  <li className="list-item">
+                    <a
+                      href="https://www.linkedin.com/in/joaovitorwitt/"
+                      target="_blank"
+                      className="list-link"
+                      rel="noreferrer"
+                    >
+                      <i className="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="message-me">
+                <h4>Send me a message</h4>
+
+                <div className="message-me-data-container">
+                  <FontAwesomeIcon icon={faPhone} />
+                  <p>+55 54 991109265</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
