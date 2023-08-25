@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.bcad915e.css",
-    "main.js": "/website/static/js/main.a3241893.js",
+    "main.css": "/website/static/css/main.3f1dac7e.css",
+    "main.js": "/website/static/js/main.2cb8cace.js",
     "static/js/787.bbe01249.chunk.js": "/website/static/js/787.bbe01249.chunk.js",
     "static/media/stop-studying-programming.png": "/website/static/media/stop-studying-programming.63d0103c14eb8752182e.png",
     "static/media/high-level-project.png": "/website/static/media/high-level-project.e1b19d5aa49c492fa46b.png",
@@ -21,12 +21,12 @@
     "static/media/profile-picture.jpg": "/website/static/media/profile-picture.dc35f73861503b139ac6.jpg",
     "static/media/sparkle_alt_light.png": "/website/static/media/sparkle_alt_light.b19cff272d282b866648.png",
     "index.html": "/website/index.html",
-    "main.bcad915e.css.map": "/website/static/css/main.bcad915e.css.map",
-    "main.a3241893.js.map": "/website/static/js/main.a3241893.js.map",
+    "main.3f1dac7e.css.map": "/website/static/css/main.3f1dac7e.css.map",
+    "main.2cb8cace.js.map": "/website/static/js/main.2cb8cace.js.map",
     "787.bbe01249.chunk.js.map": "/website/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcad915e.css",
-    "static/js/main.a3241893.js"
+    "static/css/main.3f1dac7e.css",
+    "static/js/main.2cb8cace.js"
   ]
 }
