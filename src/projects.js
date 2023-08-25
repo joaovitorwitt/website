@@ -10,13 +10,15 @@ const projectsList = [
   {
     id: 1,
     title: "Physics Engine",
-    description: "Description",
+    description:
+      "A place where you can take your physics knowledge to the next level.",
     image: physicsEngine,
   },
   {
     id: 2,
     title: "Productivity App",
-    description: "Productivity app. Powered by Django and React",
+    description:
+      "Most people say that you cannot buy time. Let me show you something..",
     image: productivityApp,
   },
   {
@@ -28,14 +30,14 @@ const projectsList = [
   },
   {
     id: 4,
-    title: "Some vertical AI project",
-    description: "description for my vertical ai project",
+    title: "AGI",
+    description: "You saw that coming",
     image: verticalAI,
   },
   {
     id: 5,
-    title: "Some Blockchain project",
-    description: "description for my Blockchain project",
+    title: "Blockchain Ecosystem",
+    description: "Run, deploy, and test all your blockchain operations.",
     image: blockchainProject,
   },
   {

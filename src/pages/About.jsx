@@ -74,6 +74,28 @@ export default function About() {
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
                   </li>
+
+                  <li>
+                    <a
+                      href="https://twitter.com/joaovitorwitt"
+                      target="_blank"
+                      className="list-link"
+                      rel="noreferrer"
+                    >
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      className="list-link"
+                      rel="noreferrer"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
 

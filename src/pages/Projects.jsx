@@ -14,6 +14,7 @@ export default function Projects() {
 
     sr.reveal(".main-title-projects", { origin: "top" });
     sr.reveal(".portfolio-card", { interval: 200 });
+    sr.reveal(".disclaimer", { origin: "left" });
   });
 
   // TODO - add field for a more detailed description for the individual page
@@ -26,6 +27,10 @@ export default function Projects() {
         <h1 className="title main-title-projects">
           Explore my personal projects where ideas come to life
         </h1>
+        <p className="disclaimer">
+          *Disclaimer: The images are just for illustration since the projects
+          are not production ready.
+        </p>
 
         <div className="portfolio-cards d-grid">
           {/* <!-- BE CAREFUL WHEN LOOP COUNTER GOES BEYOND 6 --> */}

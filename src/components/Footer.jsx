@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-
 export default function Footer() {
   const date = new Date();
   let year = date.getFullYear();
@@ -31,9 +28,25 @@ export default function Footer() {
               </a>
             </li>
 
-            <li className="list-item">
-              <FontAwesomeIcon icon={faPhone} />
-              <p>+55 54 991109265</p>
+            <li>
+              <a
+                href="https://twitter.com/joaovitorwitt"
+                target="_blank"
+                className="list-link"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                className="list-link"
+                rel="noreferrer"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </li>
           </ul>
         </div>

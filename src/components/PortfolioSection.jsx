@@ -63,7 +63,7 @@ export default function PortfolioSection() {
             </div>
 
             <div className="card-heading">
-              <h5 className="card-title">Vertical AI Project</h5>
+              <h5 className="card-title">AGI</h5>
               <span className="card-subtitle">You saw that coming.</span>
             </div>
           </Link>

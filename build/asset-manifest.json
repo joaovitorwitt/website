@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.bcad915e.css",
+    "main.js": "/website/static/js/main.a3241893.js",
+    "static/js/787.bbe01249.chunk.js": "/website/static/js/787.bbe01249.chunk.js",
+    "static/media/stop-studying-programming.png": "/website/static/media/stop-studying-programming.63d0103c14eb8752182e.png",
+    "static/media/high-level-project.png": "/website/static/media/high-level-project.e1b19d5aa49c492fa46b.png",
+    "static/media/physics-project.png": "/website/static/media/physics-project.5ef069054cc3f8b118d5.png",
+    "static/media/vertical-ai.png": "/website/static/media/vertical-ai.877d394fb65071679efb.png",
+    "static/media/blockchain-project.png": "/website/static/media/blockchain-project.df2e854fdcb5ea216206.png",
+    "static/media/productivity-app.png": "/website/static/media/productivity-app.a49b7e9a5c737973baa6.png",
+    "static/media/statue_hero.png": "/website/static/media/statue_hero.5c24b95dfabc8d86a279.png",
+    "static/media/walking-on-thin-ice-ai.png": "/website/static/media/walking-on-thin-ice-ai.bf7b42d6fed9f7eb5601.png",
+    "static/media/placeholder2.png": "/website/static/media/placeholder2.d8fc6fa80ef1c225a8d6.png",
+    "static/media/placeholder.png": "/website/static/media/placeholder.f98b755bdc99acbee3f4.png",
+    "static/media/write-code-like-human.png": "/website/static/media/write-code-like-human.0c5f3cc012eda4f7ed52.png",
+    "static/media/computer-science-field.png": "/website/static/media/computer-science-field.cd593d52398b884e4f11.png",
+    "static/media/how-ai-will-transform-education.png": "/website/static/media/how-ai-will-transform-education.cb88e59ab8eddb31bfda.png",
+    "static/media/academic-scraper.png": "/website/static/media/academic-scraper.44f823f004e26aea49fe.png",
+    "static/media/write-commit-messages-right.jpg": "/website/static/media/write-commit-messages-right.2af21f8b3ab47d5208a5.jpg",
+    "static/media/profile-picture.jpg": "/website/static/media/profile-picture.dc35f73861503b139ac6.jpg",
+    "static/media/sparkle_alt_light.png": "/website/static/media/sparkle_alt_light.b19cff272d282b866648.png",
+    "index.html": "/website/index.html",
+    "main.bcad915e.css.map": "/website/static/css/main.bcad915e.css.map",
+    "main.a3241893.js.map": "/website/static/js/main.a3241893.js.map",
+    "787.bbe01249.chunk.js.map": "/website/static/js/787.bbe01249.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcad915e.css",
+    "static/js/main.a3241893.js"
+  ]
+}
